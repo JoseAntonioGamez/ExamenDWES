@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 6 - Última revisión veterinaria</title></head>
+<body>
+<h1>Última revisión según filtros</h1>
+{% if revision %}
+  <p>Animal: {{ revision.animal.nombre }}</p>
+  <p>Veterinario: {{ revision.veterinario }}</p>
+  <p>Fecha: {{ revision.fecha }}</p>
+  <p>Puntuación salud: {{ revision.puntuacion_salud }}</p>
+{% else %}
+  <p>No se encontró revisión con esos criterios.</p>
+{% endif %}
+</body>
+</html>
