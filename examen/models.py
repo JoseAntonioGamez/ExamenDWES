@@ -4,29 +4,30 @@ from django.utils import timezone
 from django.core.validators import MinValueValidator, MaxValueValidator
 
 # Create your models here.
-
-class Estudio(models.Model):
-    nombre = models.CharField(max_length=100)
     
-class Sede(models.Model):
-    estudio = models.ForeignKey(Estudio, on_delete=models.CASCADE, related_name='sedes')
-    pais = models.CharField(max_length=100)
+class Refugio(models.Model):
+    nombre = models.CharField(max_length=100)
 
-class Plataforma(models.Model):
+class Centro(models.Model):
+    nombre = models.CharField(max_length=100)
+    refugio = models.ForeignKey(Refugio, on_delete=models.CASCADE, related_name='centros')
+
+class Vacuna(models.Model):
     nombre = models.CharField(max_length=100)
     fabricante = models.CharField(max_length=100)
+    
+class Animal(models.Model):
+    nombre = models.CharField(max_length=100)
+    centro = models.ForeignKey(Centro, on_delete=models.CASCADE, related_name='animales')
+    edad_estimada = models.IntegerField(null=True, blank=True)
 
-class Videojuego(models.Model):
-    titulo = models.CharField(max_length=200)
-    estudio_desarrollo = models.ForeignKey(Estudio, on_delete=models.CASCADE, related_name='videojuegos')
-    ventas_estimadas = models.IntegerField(null=True, blank=True)
+class AnimalVacunas(models.Model):
+    animal = models.ForeignKey(Animal, on_delete=models.CASCADE, related_name='animal_vacunas')
+    vacuna = models.ForeignKey(Vacuna, on_delete=models.CASCADE, related_name='animal_vacunas')
 
-class VideojuegoPlataformas(models.Model):
-    videojuego = models.ForeignKey(Videojuego, on_delete=models.CASCADE, related_name='videojuego_plataformas')
-    plataforma = models.ForeignKey(Plataforma, on_delete=models.CASCADE, related_name='plataformas_videojuegos')
+class RevisionVeterinaria(models.Model):
+    animal = models.ForeignKey(Animal, on_delete=models.CASCADE, related_name='revisiones')
+    puntuacion_salud = models.IntegerField()
+    veterinario = models.CharField(max_length=100)
+    fecha = models.DateField()
 
-class Analisis(models.Model):
-    videojuego = models.ForeignKey(Videojuego, on_delete=models.CASCADE, related_name='analisis')
-    puntuacion = models.IntegerField(default=50)
-    comentario = models.TextField(null=True, blank=True)
-    fecha = models.DateField(null=True, blank=True)

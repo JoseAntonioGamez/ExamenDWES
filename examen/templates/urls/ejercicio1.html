@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 1</title>
+</head>
+<body>
+<h1>Animales con nombre Max en refugio Animales_Felices</h1>
+{% for animal in animales %}
+  <h2>NOMBRE: {{ animal.nombre }}</h2>
+  <p>CENTRO: {{ animal.centro.nombre }}</p> 
+  <p>REFUGIO: {{ animal.centro.refugio.nombre }}</p>
+  
+  <p>Vacunas:</p>
+  <ul>
+    {% for av in animal.animal_vacunas.all %}
+      <li>{{ av.vacuna.nombre }} (Fabricante: {{ av.vacuna.fabricante }})</li>
+    {% empty %}
+      <li>Sin vacunas</li>
+    {% endfor %}
+  </ul>
+  
+  <p>Revisiones Veterinarias:</p>
+  <ul>
+    {% for rev in animal.revisiones.all %}
+      <li>Puntuación: {{ rev.puntuacion_salud }}</li>
+       <li>Fecha: {{ rev.fecha }}</li> 
+       <li>Veterinario: {{ rev.veterinario }}</li>
+    {% empty %}
+      <li>Sin revisiones</li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+</body>
+</html>

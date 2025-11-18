@@ -13,35 +13,39 @@ def index(request):
 """
 Ejercicio1
 """
+def ejercicio1(request):
+    animales = Animal.objects.filter(
+        nombre__icontains='Max',
+        centro__refugio__nombre='Animales_Felices'
+    ).select_related('centro', 'centro__refugio').prefetch_related(
+        'animal_vacunas__vacuna'
+    ).distinct()
+    return render(request, 'urls/ejercicio1.html', {'animales': animales})
 
-def listar_videojuegos(request):
-    """
-    videojuegos = (Videojuego.objects.raw("SELECT "
-        +    "V.*,E.*,VP.*,P.*"
-        +"FROM" 
-        +   "examen_videojuego V"
-        +"INNER JOIN"
-        +    "examen_estudio E ON V.estudio_desarrollo_id = E.id"
-        +"INNER JOIN"
-        +    "examen_sede S ON E.id = S.estudio_id"
-        +"LEFT JOIN" 
-        +    "examen_videojuego_plataformas VP ON V.id = VP.videojuego_id"
-        +"LEFT JOIN"
-        +    "examen_plataforma P ON VP.plataforma_id = P.id"
-        +"LEFT JOIN"
-        +    "examen_analisis A ON V.id = A.videojuego_id"
-        +"WHERE" 
-        +    "V.titulo LIKE '%Fantasy%'" 
-        +    "AND S.pais LIKE '%unidos%'")
-    )
-    """
-    
-    videojuegos=Videojuego.objects.filter(
-        titulo__icontains='Fantasy',
-        estudio_desarrollo__sedes__pais__icontains='Unidos').select_related('estudio_desarrollo').prefetch_related('videojuego_plataformas__plataforma').prefetch_related('analisis').distinct()
+"""
+Ejercicio2
+"""
 
-    
-    return render(request, 'urls/unidos_fantasy.html', {'videojuegos': videojuegos})
+
+"""
+Ejercicio3
+"""
+
+
+"""
+Ejercicio4
+"""
+
+
+"""
+Ejercicio5
+"""
+
+
+"""
+Ejercicio6
+"""
+
 
 def mi_error_400(request, exception=None):
     return render(request, 'errores/400.html', None, None, 400)
