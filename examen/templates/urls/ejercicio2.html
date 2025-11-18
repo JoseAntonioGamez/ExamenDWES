@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 2</title></head>
+<body>
+<h1>Vacunas que el fabricante sea Zoetis o el nombre sea Rabia y salud mayor que 80</h1>
+{% for animal in animales %}
+  <h2>NOMBRE: {{ animal.nombre }}</h2>
+  <p>CENTRO: {{ animal.centro.nombre }}</p>
+
+  <p>Vacunas:</p>
+  <ul>
+    {% for av in animal.animal_vacunas.all %}
+      <li>{{ av.vacuna.nombre }} ({{ av.vacuna.fabricante }})</li>
+    {% endfor %}
+  </ul>
+
+  <p>Revisiones:</p>
+  <ul>
+    {% for rev in animal.revisiones.all %}
+      <li>Puntuación: {{ rev.puntuacion_salud }}</li>
+      <li>Fecha: {{ rev.fecha }}</li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+</body>
+</html>

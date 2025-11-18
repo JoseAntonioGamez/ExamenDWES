@@ -25,6 +25,15 @@ def ejercicio1(request):
 """
 Ejercicio2
 """
+def ejercicio2(request):
+    animales = Animal.objects.filter(
+        Q(animal_vacunas__vacuna__fabricante__icontains='Zoetis'),
+        Q(animal_vacunas__vacuna__nombre__icontains='Rabia'),
+        revisiones__puntuacion_salud__gt=80
+    ).select_related('centro'
+    ).prefetch_related('animal_vacunas__vacuna'
+    ).distinct()[:3]
+    return render(request, 'urls/ejercicio2.html', {'animales': animales})
 
 
 """
