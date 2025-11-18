@@ -39,6 +39,10 @@ def ejercicio2(request):
 """
 Ejercicio3
 """
+def ejercicio3(request):
+    animales = Animal.objects.filter(animal_vacunas=None).select_related('centro'
+    ).order_by('-edad_estimada').distinct()
+    return render(request, 'urls/ejercicio3.html', {'animales': animales})
 
 
 """

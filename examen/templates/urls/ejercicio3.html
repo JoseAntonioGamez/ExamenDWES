@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 3</title></head>
+<body>
+<h1>Animales sin vacunas y ordenados por edad estimada</h1>
+<ul>
+{% for animal in animales %}
+  <li>NOMBRE: {{ animal.nombre }}</li>
+  <li>CENTRO: {{ animal.centro.nombre }}</li>
+  <li>EDAD: {{ animal.edad_estimada|default:"N/A" }}</li>
+  <br>
+{% endfor %}
+</ul>
+</body>
+</html>
