@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 4</title></head>
+<body>
+<h1>Refugios con animales con revisión veterinaria en 2024</h1>
+<ul>
+{% for refugio in refugios %}
+  <li>NOMBRE REFUGIO: {{ refugio.nombre }}</li>
+{% endfor %}
+</ul>
+</body>
+</html>

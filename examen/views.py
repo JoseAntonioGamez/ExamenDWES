@@ -48,6 +48,12 @@ def ejercicio3(request):
 """
 Ejercicio4
 """
+def ejercicio4(request, anio):
+    refugios = Refugio.objects.filter(
+        centros__animales__revisiones__fecha__year=anio
+    ).order_by('-centros__animales__revisiones__puntuacion_salud'
+    ).distinct()
+    return render(request, 'urls/ejercicio4.html', {'refugios': refugios, 'anio': anio})
 
 
 """
