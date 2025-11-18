@@ -7,4 +7,5 @@ urlpatterns = [
     path('ej2/', views.ejercicio2, name='ejercicio2'),
     path('ej3/', views.ejercicio3, name='ejercicio3'),
     path('ej4/<int:anio>/', views.ejercicio4, name='ejercicio4'),
+    path('ej5/<int:centro_id>/', views.ejercicio5, name='ejercicio5'),
 ]

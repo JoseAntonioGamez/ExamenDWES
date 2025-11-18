@@ -59,6 +59,13 @@ def ejercicio4(request, anio):
 """
 Ejercicio5
 """
+def ejercicio5(request, centro_id):
+    animales = Animal.objects.filter(
+        centro_id=centro_id
+    ).annotate(
+        media_salud=Avg('revisiones__puntuacion_salud')
+    ).filter(media_salud__lt=50)
+    return render(request, 'urls/ejercicio5.html', {'animales': animales})
 
 
 """

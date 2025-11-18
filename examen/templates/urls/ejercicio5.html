@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ejercicio 5</title></head>
+<body>
+<h1>Animales con media revisión menor a 50 en centro específico</h1>
+<ul>
+{% for animal in animales %}
+  <li>NOMBRE: {{ animal.nombre }}</li> 
+  <li>CENTRO: {{ animal.centro.nombre }}</li>
+  <li>Media Salud: {{ animal.media_salud|floatformat:2 }}</li>
+  <br>
+{% endfor %}
+</ul>
+</body>
+</html>
