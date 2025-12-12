@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Registrarse</h2>
+<p>Elige el tipo de cuenta para mostrar el formulario adecuado:</p>
+<p>
+  <a href="?tipo=paciente" class="btn btn-outline-primary">Registrarse como Paciente</a>
+  <a href="?tipo=investigador" class="btn btn-outline-secondary">Registrarse como Investigador</a>
+</p>
+
+<form action="{% url 'registrar_usuario' %}" method="post">
+    {% load django_bootstrap5 %}
+    {% csrf_token %}
+    {% if tipo %}
+        <input type="hidden" name="tipo" value="{{ tipo }}">
+    {% endif %}
+    {% bootstrap_form formulario %}
+    {% bootstrap_button "Enviar" button_type="submit" button_class="btn-primary" %}
+</form>
+{% endblock %}

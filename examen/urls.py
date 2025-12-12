@@ -3,9 +3,13 @@ from .import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('ej1/', views.ejercicio1, name='ejercicio1'),
-    path('ej2/', views.ejercicio2, name='ejercicio2'),
-    path('ej3/', views.ejercicio3, name='ejercicio3'),
-    path('ej4/<int:anio>/', views.ejercicio4, name='ejercicio4'),
-    path('ej5/<int:centro_id>/', views.ejercicio5, name='ejercicio5'),
+    path('registrar', views.registrar_usuario, name='registrar_usuario'),
+    path('logout/', views.logout_view, name='logout'),
+    path('ensayos/', views.lista_ensayos, name='lista_ensayos'),
+    path('ensayos/crear/', views.crear_ensayo, name='crear_ensayo'),
+    path('ensayos/<int:ensayo_id>/', views.detalle_ensayo, name='detalle_ensayo'),
+    path('ensayos/<int:ensayo_id>/editar/', views.editar_ensayo, name='editar_ensayo'),
+    path('ensayos/<int:ensayo_id>/eliminar/', views.eliminar_ensayo, name='eliminar_ensayo'),
+
+
 ]

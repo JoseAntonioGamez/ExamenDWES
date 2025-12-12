@@ -1,11 +1,17 @@
 from django.contrib import admin
-from .models import Refugio, Centro, Vacuna, Animal, RevisionVeterinaria, AnimalVacunas
+from .models import *
+from django.contrib.auth.admin import UserAdmin
 
 # Register your models here.
 
-admin.site.register(Refugio)
-admin.site.register(Centro)
-admin.site.register(Vacuna)
-admin.site.register(Animal)
-admin.site.register(RevisionVeterinaria)
-admin.site.register(AnimalVacunas)
+@admin.register(Usuario)
+class UsuarioAdmin(UserAdmin):
+    fieldsets = UserAdmin.fieldsets + (
+        ('Rol', {'fields': ('rol',)}),
+    )
+    list_display = ('username', 'email', 'first_name', 'last_name', 'rol', 'is_staff')
+
+admin.site.register(Farmaco)
+admin.site.register(EnsayoClinico)
+admin.site.register(Paciente)
+admin.site.register(Investigador)

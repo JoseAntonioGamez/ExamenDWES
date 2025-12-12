@@ -21,6 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('__debug__/', include("debug_toolbar.urls")),
     path('', include('examen.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
 
 from django.conf.urls import handler404, handler400, handler403, handler500

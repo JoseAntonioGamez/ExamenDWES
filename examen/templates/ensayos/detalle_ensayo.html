@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}{{ ensayo.nombre }}{% endblock %}
+{% block content %}
+  <h1>{{ ensayo.nombre }}</h1>
+  <p>{{ ensayo.descripcion }}</p>
+  <p>Fármaco: {{ ensayo.farmaco }}</p>
+  <p>Nivel seguimiento: {{ ensayo.nivel_seguimiento }}</p>
+  <p>Fechas: {{ ensayo.fecha_inicio }} - {{ ensayo.fecha_fin }}</p>
+  <p>Pacientes:
+    <ul>
+      {% for p in ensayo.pacientes.all %}
+        <li>{{ p.nombre }}</li>
+      {% endfor %}
+    </ul>
+  </p>
+  <p>Creado por: {{ ensayo.creado_por }}</p>
+  <a href="{% url 'editar_ensayo' ensayo.pk %}">Editar</a> |
+  <a href="{% url 'eliminar_ensayo' ensayo.pk %}">Eliminar</a>
+{% endblock %}

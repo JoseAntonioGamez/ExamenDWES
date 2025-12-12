@@ -11,9 +11,6 @@ venv/
 # Database
 db.sqlite3
 
-# Static folder at project root
-/static/
-
 # macOS
 ._*
 .DS_Store
@@ -27,6 +24,6 @@ ehthumbs*.db
 $RECYCLE.BIN/
 
 # Visual Studio
-.vscode/
+
 .history/
 *.code-workspace

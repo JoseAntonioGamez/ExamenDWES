@@ -1,14 +1,19 @@
-<html>
-  <head> </head>
-    <body>
-        <h1>EXAMEN</h1>
-        <h2>Listado de enlaces</h2>
-        <ul>
-            <li><a href="{% url 'ejercicio1' %}">ejercicio1</a></li>
-            <li><a href="{% url 'ejercicio2' %}">ejercicio2</a></li>
-            <li><a href="{% url 'ejercicio3' %}">ejercicio3</a></li>
-            <li><a href="{% url 'ejercicio4' anio=2024%}">ejercicio4</a></li>
-            <li><a href="{% url 'ejercicio5' centro_id=1%}">ejercicio5</a></li>
-    
-        </ul>
-  </html>
+{% extends "base.html" %}
+
+{% block title %}Inicio{% endblock %}
+{% block header %}
+  <h1>Examen</h1>
+{% endblock %}
+{% block content %}
+  <p>
+    Fecha de inicio:
+    {{ request.session.fecha_inicio }}<br>
+    Nombre de usuario:
+    {{ request.session.nombre }}<br>
+    Rol de usuario:
+    {{ request.session.rol }}<br>
+    Número de visitas a la página:
+    {{ request.session.visitas }}
+  </p>
+  <p>Bienvenido. Utiliza el menú superior para navegar.</p>
+{% endblock %}

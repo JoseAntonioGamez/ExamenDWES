@@ -40,7 +40,12 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'django_seed',
     'examen',
+    'django_bootstrap5',
+    'django_bootstrap_icons',
 ]
+
+# Use custom user model
+AUTH_USER_MODEL = 'examen.Usuario'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -121,6 +126,9 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
+
+LOGIN_REDIRECT_URL = 'index'
+LOGOUT_REDIRECT_URL = 'index'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

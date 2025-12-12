@@ -3,11 +3,11 @@
     "model": "admin.logentry",
     "pk": 1,
     "fields": {
-        "action_time": "2025-11-18T08:53:13.941",
+        "action_time": "2025-12-12T09:49:11.985",
         "user": 1,
-        "content_type": 10,
+        "content_type": 3,
         "object_id": "1",
-        "object_repr": "Refugio object (1)",
+        "object_repr": "Pacientes",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -16,11 +16,11 @@
     "model": "admin.logentry",
     "pk": 2,
     "fields": {
-        "action_time": "2025-11-18T09:04:04.233",
+        "action_time": "2025-12-12T09:49:45.436",
         "user": 1,
-        "content_type": 11,
-        "object_id": "1",
-        "object_repr": "Centro object (1)",
+        "content_type": 3,
+        "object_id": "2",
+        "object_repr": "Investigadores",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -29,11 +29,11 @@
     "model": "admin.logentry",
     "pk": 3,
     "fields": {
-        "action_time": "2025-11-18T09:04:18.431",
+        "action_time": "2025-12-12T10:30:28.233",
         "user": 1,
-        "content_type": 10,
-        "object_id": "2",
-        "object_repr": "Refugio object (2)",
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "ZonaAlta",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -42,11 +42,11 @@
     "model": "admin.logentry",
     "pk": 4,
     "fields": {
-        "action_time": "2025-11-18T09:04:33.015",
+        "action_time": "2025-12-12T10:30:36.729",
         "user": 1,
-        "content_type": 11,
+        "content_type": 6,
         "object_id": "2",
-        "object_repr": "Centro object (2)",
+        "object_repr": "Platanito",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -55,11 +55,11 @@
     "model": "admin.logentry",
     "pk": 5,
     "fields": {
-        "action_time": "2025-11-18T09:05:19.161",
+        "action_time": "2025-12-12T10:31:19.935",
         "user": 1,
-        "content_type": 7,
+        "content_type": 9,
         "object_id": "1",
-        "object_repr": "Animal object (1)",
+        "object_repr": "Juan",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -68,180 +68,11 @@
     "model": "admin.logentry",
     "pk": 6,
     "fields": {
-        "action_time": "2025-11-18T09:06:01.727",
+        "action_time": "2025-12-12T10:31:34.635",
         "user": 1,
-        "content_type": 7,
-        "object_id": "2",
-        "object_repr": "Animal object (2)",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 7,
-    "fields": {
-        "action_time": "2025-11-18T09:07:25.803",
-        "user": 1,
-        "content_type": 12,
+        "content_type": 10,
         "object_id": "1",
-        "object_repr": "RevisionVeterinaria object (1)",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 8,
-    "fields": {
-        "action_time": "2025-11-18T09:07:53.078",
-        "user": 1,
-        "content_type": 12,
-        "object_id": "2",
-        "object_repr": "RevisionVeterinaria object (2)",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 9,
-    "fields": {
-        "action_time": "2025-11-18T09:08:19.535",
-        "user": 1,
-        "content_type": 8,
-        "object_id": "1",
-        "object_repr": "Vacuna object (1)",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 10,
-    "fields": {
-        "action_time": "2025-11-18T09:08:55.071",
-        "user": 1,
-        "content_type": 8,
-        "object_id": "2",
-        "object_repr": "Vacuna object (2)",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 11,
-    "fields": {
-        "action_time": "2025-11-18T09:36:17.343",
-        "user": 1,
-        "content_type": 9,
-        "object_id": "1",
-        "object_repr": "AnimalVacunas object (1)",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 12,
-    "fields": {
-        "action_time": "2025-11-18T09:36:26.937",
-        "user": 1,
-        "content_type": 9,
-        "object_id": "2",
-        "object_repr": "AnimalVacunas object (2)",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 13,
-    "fields": {
-        "action_time": "2025-11-18T09:52:09.038",
-        "user": 1,
-        "content_type": 8,
-        "object_id": "3",
-        "object_repr": "Vacuna object (3)",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 14,
-    "fields": {
-        "action_time": "2025-11-18T09:52:26.437",
-        "user": 1,
-        "content_type": 9,
-        "object_id": "3",
-        "object_repr": "AnimalVacunas object (3)",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 15,
-    "fields": {
-        "action_time": "2025-11-18T09:54:43.992",
-        "user": 1,
-        "content_type": 9,
-        "object_id": "4",
-        "object_repr": "AnimalVacunas object (4)",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 16,
-    "fields": {
-        "action_time": "2025-11-18T10:16:49.036",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "3",
-        "object_repr": "Animal object (3)",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 17,
-    "fields": {
-        "action_time": "2025-11-18T10:18:20.812",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "4",
-        "object_repr": "Animal object (4)",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 18,
-    "fields": {
-        "action_time": "2025-11-18T11:01:16.079",
-        "user": 1,
-        "content_type": 7,
-        "object_id": "5",
-        "object_repr": "Animal object (5)",
-        "action_flag": 1,
-        "change_message": "[{\"added\": {}}]"
-    }
-},
-{
-    "model": "admin.logentry",
-    "pk": 19,
-    "fields": {
-        "action_time": "2025-11-18T11:03:13.840",
-        "user": 1,
-        "content_type": 12,
-        "object_id": "3",
-        "object_repr": "RevisionVeterinaria object (3)",
+        "object_repr": "Platero y yo",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
@@ -358,342 +189,275 @@
     "model": "auth.permission",
     "pk": 13,
     "fields": {
-        "name": "Can add user",
+        "name": "Can add content type",
         "content_type": 4,
-        "codename": "add_user"
+        "codename": "add_contenttype"
     }
 },
 {
     "model": "auth.permission",
     "pk": 14,
     "fields": {
-        "name": "Can change user",
+        "name": "Can change content type",
         "content_type": 4,
-        "codename": "change_user"
+        "codename": "change_contenttype"
     }
 },
 {
     "model": "auth.permission",
     "pk": 15,
     "fields": {
-        "name": "Can delete user",
+        "name": "Can delete content type",
         "content_type": 4,
-        "codename": "delete_user"
+        "codename": "delete_contenttype"
     }
 },
 {
     "model": "auth.permission",
     "pk": 16,
     "fields": {
-        "name": "Can view user",
+        "name": "Can view content type",
         "content_type": 4,
-        "codename": "view_user"
+        "codename": "view_contenttype"
     }
 },
 {
     "model": "auth.permission",
     "pk": 17,
     "fields": {
-        "name": "Can add content type",
+        "name": "Can add session",
         "content_type": 5,
-        "codename": "add_contenttype"
+        "codename": "add_session"
     }
 },
 {
     "model": "auth.permission",
     "pk": 18,
     "fields": {
-        "name": "Can change content type",
+        "name": "Can change session",
         "content_type": 5,
-        "codename": "change_contenttype"
+        "codename": "change_session"
     }
 },
 {
     "model": "auth.permission",
     "pk": 19,
     "fields": {
-        "name": "Can delete content type",
+        "name": "Can delete session",
         "content_type": 5,
-        "codename": "delete_contenttype"
+        "codename": "delete_session"
     }
 },
 {
     "model": "auth.permission",
     "pk": 20,
     "fields": {
-        "name": "Can view content type",
+        "name": "Can view session",
         "content_type": 5,
-        "codename": "view_contenttype"
+        "codename": "view_session"
     }
 },
 {
     "model": "auth.permission",
     "pk": 21,
     "fields": {
-        "name": "Can add session",
+        "name": "Can add farmaco",
         "content_type": 6,
-        "codename": "add_session"
+        "codename": "add_farmaco"
     }
 },
 {
     "model": "auth.permission",
     "pk": 22,
     "fields": {
-        "name": "Can change session",
+        "name": "Can change farmaco",
         "content_type": 6,
-        "codename": "change_session"
+        "codename": "change_farmaco"
     }
 },
 {
     "model": "auth.permission",
     "pk": 23,
     "fields": {
-        "name": "Can delete session",
+        "name": "Can delete farmaco",
         "content_type": 6,
-        "codename": "delete_session"
+        "codename": "delete_farmaco"
     }
 },
 {
     "model": "auth.permission",
     "pk": 24,
     "fields": {
-        "name": "Can view session",
+        "name": "Can view farmaco",
         "content_type": 6,
-        "codename": "view_session"
+        "codename": "view_farmaco"
     }
 },
 {
     "model": "auth.permission",
     "pk": 25,
     "fields": {
-        "name": "Can add animal",
+        "name": "Can add user",
         "content_type": 7,
-        "codename": "add_animal"
+        "codename": "add_usuario"
     }
 },
 {
     "model": "auth.permission",
     "pk": 26,
     "fields": {
-        "name": "Can change animal",
+        "name": "Can change user",
         "content_type": 7,
-        "codename": "change_animal"
+        "codename": "change_usuario"
     }
 },
 {
     "model": "auth.permission",
     "pk": 27,
     "fields": {
-        "name": "Can delete animal",
+        "name": "Can delete user",
         "content_type": 7,
-        "codename": "delete_animal"
+        "codename": "delete_usuario"
     }
 },
 {
     "model": "auth.permission",
     "pk": 28,
     "fields": {
-        "name": "Can view animal",
+        "name": "Can view user",
         "content_type": 7,
-        "codename": "view_animal"
+        "codename": "view_usuario"
     }
 },
 {
     "model": "auth.permission",
     "pk": 29,
     "fields": {
-        "name": "Can add vacuna",
+        "name": "Can add investigador",
         "content_type": 8,
-        "codename": "add_vacuna"
+        "codename": "add_investigador"
     }
 },
 {
     "model": "auth.permission",
     "pk": 30,
     "fields": {
-        "name": "Can change vacuna",
+        "name": "Can change investigador",
         "content_type": 8,
-        "codename": "change_vacuna"
+        "codename": "change_investigador"
     }
 },
 {
     "model": "auth.permission",
     "pk": 31,
     "fields": {
-        "name": "Can delete vacuna",
+        "name": "Can delete investigador",
         "content_type": 8,
-        "codename": "delete_vacuna"
+        "codename": "delete_investigador"
     }
 },
 {
     "model": "auth.permission",
     "pk": 32,
     "fields": {
-        "name": "Can view vacuna",
+        "name": "Can view investigador",
         "content_type": 8,
-        "codename": "view_vacuna"
+        "codename": "view_investigador"
     }
 },
 {
     "model": "auth.permission",
     "pk": 33,
     "fields": {
-        "name": "Can add animal vacunas",
+        "name": "Can add paciente",
         "content_type": 9,
-        "codename": "add_animalvacunas"
+        "codename": "add_paciente"
     }
 },
 {
     "model": "auth.permission",
     "pk": 34,
     "fields": {
-        "name": "Can change animal vacunas",
+        "name": "Can change paciente",
         "content_type": 9,
-        "codename": "change_animalvacunas"
+        "codename": "change_paciente"
     }
 },
 {
     "model": "auth.permission",
     "pk": 35,
     "fields": {
-        "name": "Can delete animal vacunas",
+        "name": "Can delete paciente",
         "content_type": 9,
-        "codename": "delete_animalvacunas"
+        "codename": "delete_paciente"
     }
 },
 {
     "model": "auth.permission",
     "pk": 36,
     "fields": {
-        "name": "Can view animal vacunas",
+        "name": "Can view paciente",
         "content_type": 9,
-        "codename": "view_animalvacunas"
+        "codename": "view_paciente"
     }
 },
 {
     "model": "auth.permission",
     "pk": 37,
     "fields": {
-        "name": "Can add refugio",
+        "name": "Can add ensayo clinico",
         "content_type": 10,
-        "codename": "add_refugio"
+        "codename": "add_ensayoclinico"
     }
 },
 {
     "model": "auth.permission",
     "pk": 38,
     "fields": {
-        "name": "Can change refugio",
+        "name": "Can change ensayo clinico",
         "content_type": 10,
-        "codename": "change_refugio"
+        "codename": "change_ensayoclinico"
     }
 },
 {
     "model": "auth.permission",
     "pk": 39,
     "fields": {
-        "name": "Can delete refugio",
+        "name": "Can delete ensayo clinico",
         "content_type": 10,
-        "codename": "delete_refugio"
+        "codename": "delete_ensayoclinico"
     }
 },
 {
     "model": "auth.permission",
     "pk": 40,
     "fields": {
-        "name": "Can view refugio",
+        "name": "Can view ensayo clinico",
         "content_type": 10,
-        "codename": "view_refugio"
+        "codename": "view_ensayoclinico"
     }
 },
 {
-    "model": "auth.permission",
-    "pk": 41,
-    "fields": {
-        "name": "Can add centro",
-        "content_type": 11,
-        "codename": "add_centro"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 42,
-    "fields": {
-        "name": "Can change centro",
-        "content_type": 11,
-        "codename": "change_centro"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 43,
-    "fields": {
-        "name": "Can delete centro",
-        "content_type": 11,
-        "codename": "delete_centro"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 44,
-    "fields": {
-        "name": "Can view centro",
-        "content_type": 11,
-        "codename": "view_centro"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 45,
-    "fields": {
-        "name": "Can add revision veterinaria",
-        "content_type": 12,
-        "codename": "add_revisionveterinaria"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 46,
-    "fields": {
-        "name": "Can change revision veterinaria",
-        "content_type": 12,
-        "codename": "change_revisionveterinaria"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 47,
-    "fields": {
-        "name": "Can delete revision veterinaria",
-        "content_type": 12,
-        "codename": "delete_revisionveterinaria"
-    }
-},
-{
-    "model": "auth.permission",
-    "pk": 48,
-    "fields": {
-        "name": "Can view revision veterinaria",
-        "content_type": 12,
-        "codename": "view_revisionveterinaria"
-    }
-},
-{
-    "model": "auth.user",
+    "model": "auth.group",
     "pk": 1,
     "fields": {
-        "password": "pbkdf2_sha256$870000$pwt49YJR9nGkZKHugkNtdU$cfIRKdd3+0biXF8/8vNmI/to5jP5j6OhNFZpbjpPkBg=",
-        "last_login": "2025-11-18T08:50:22.027",
-        "is_superuser": true,
-        "username": "Administrator",
-        "first_name": "",
-        "last_name": "",
-        "email": "administrator@admin.com",
-        "is_staff": true,
-        "is_active": true,
-        "date_joined": "2025-11-18T08:49:36.818",
-        "groups": [],
-        "user_permissions": []
+        "name": "Pacientes",
+        "permissions": [
+            40
+        ]
+    }
+},
+{
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+        "name": "Investigadores",
+        "permissions": [
+            37,
+            38,
+            39,
+            40
+        ]
     }
 },
 {
@@ -724,21 +488,13 @@
     "model": "contenttypes.contenttype",
     "pk": 4,
     "fields": {
-        "app_label": "auth",
-        "model": "user"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 5,
-    "fields": {
         "app_label": "contenttypes",
         "model": "contenttype"
     }
 },
 {
     "model": "contenttypes.contenttype",
-    "pk": 6,
+    "pk": 5,
     "fields": {
         "app_label": "sessions",
         "model": "session"
@@ -746,10 +502,18 @@
 },
 {
     "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+        "app_label": "examen",
+        "model": "farmaco"
+    }
+},
+{
+    "model": "contenttypes.contenttype",
     "pk": 7,
     "fields": {
         "app_label": "examen",
-        "model": "animal"
+        "model": "usuario"
     }
 },
 {
@@ -757,7 +521,7 @@
     "pk": 8,
     "fields": {
         "app_label": "examen",
-        "model": "vacuna"
+        "model": "investigador"
     }
 },
 {
@@ -765,7 +529,7 @@
     "pk": 9,
     "fields": {
         "app_label": "examen",
-        "model": "animalvacunas"
+        "model": "paciente"
     }
 },
 {
@@ -773,192 +537,179 @@
     "pk": 10,
     "fields": {
         "app_label": "examen",
-        "model": "refugio"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 11,
-    "fields": {
-        "app_label": "examen",
-        "model": "centro"
-    }
-},
-{
-    "model": "contenttypes.contenttype",
-    "pk": 12,
-    "fields": {
-        "app_label": "examen",
-        "model": "revisionveterinaria"
+        "model": "ensayoclinico"
     }
 },
 {
     "model": "sessions.session",
-    "pk": "k9rxxa7m5hrn0kala398qwhrjm0ngizw",
+    "pk": "plcve15jaklgpjll8yxz8zkzfo94rsc7",
     "fields": {
-        "session_data": ".eJxVjMEOwiAQRP-FsyEVVioevfsNZNldpGogKe3J-O_SpAfN3N68mbcKuC45rE3mMLG6qKM6_LKI9JSyFfzAcq-aalnmKepN0Xvb9K2yvK67-3eQseW-Juu8hWRMkoGcADsEIJYRk0kMp9TjLcWOIJ4HT-CsEUYiP6L3Vn2-CHg5BA:1vLGTm:dr0EMPZ06ErfOKMeSDPJNpgST76L7RuLAjMRdM07EGA",
-        "expire_date": "2025-12-02T08:50:22.055"
+        "session_data": ".eJxVjEFuwyAQRa9SsW4REIONl9llEak3sIaZsU2bggRONlHuXixlY2k2__03_ylmxhWmmCLGLEZhlLFf2rT70Gq0ftRafIoJ7ts63SuXKdJuHVkA_OW0F_QDackSc9pKDHJX5Lut8pqJb-e3exhYoa7t2yGzAc9zzxZO2Hc-qIBDP9CskbrO88DKkYIA_QBOaavIzr5zYK115Npoyn-hcNv6BsxGNlLyrcVLenDd4gKUS4OPWOMGVYz69Q_pBVI8:1vTzvz:vGidimT8PZmQmgQOo1SiSdzyesK0a7Pek8lAg9rKabk",
+        "expire_date": "2025-12-26T10:59:35.508"
     }
 },
 {
-    "model": "examen.refugio",
+    "model": "examen.usuario",
     "pk": 1,
     "fields": {
-        "nombre": "Animales_Felices"
+        "password": "pbkdf2_sha256$870000$E74062njK7EV6FRsIshbn0$80jt39+qikVvN3bJQL/XWGPgTiTR7PPNXVpnJ2abIIc=",
+        "last_login": "2025-12-12T10:30:19.124",
+        "is_superuser": true,
+        "username": "Master",
+        "first_name": "",
+        "last_name": "",
+        "email": "master@master.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-12-12T09:47:33.632",
+        "rol": 1,
+        "groups": [],
+        "user_permissions": []
     }
 },
 {
-    "model": "examen.refugio",
+    "model": "examen.usuario",
     "pk": 2,
     "fields": {
-        "nombre": "Platanitos"
+        "password": "pbkdf2_sha256$870000$Lvro2lxiAsZKS4T4dcfFVW$s6INVQPBcOb9Srla1VbRZfF46cNPTalvo7XgUAxmL4g=",
+        "last_login": "2025-12-12T10:59:35.456",
+        "is_superuser": false,
+        "username": "Paco2.",
+        "first_name": "",
+        "last_name": "",
+        "email": "paco2@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-12-12T10:25:57.279",
+        "rol": 3,
+        "groups": [
+            2
+        ],
+        "user_permissions": []
     }
 },
 {
-    "model": "examen.centro",
+    "model": "examen.usuario",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$O0IM0Y2E0T5zFviokadfE0$LuBZou/acfswXbuSPucrmFCwjx/HZ7vyTlJD8/0ZcBQ=",
+        "last_login": "2025-12-12T10:54:19.332",
+        "is_superuser": false,
+        "username": "PacoGerte12.",
+        "first_name": "",
+        "last_name": "",
+        "email": "pacogerte12@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-12-12T10:34:05.705",
+        "rol": 2,
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "examen.usuario",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$LDqgJPkQ2povYtTS7DUMhE$Aaso5ZyUbGawMEWTTX0Om0aAuGwzyJhQEqH70URMp5Q=",
+        "last_login": "2025-12-12T10:58:50.255",
+        "is_superuser": false,
+        "username": "PacoGerte13.",
+        "first_name": "",
+        "last_name": "",
+        "email": "pacogerte13@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2025-12-12T10:58:49.782",
+        "rol": 2,
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "examen.farmaco",
     "pk": 1,
     "fields": {
         "nombre": "ZonaAlta",
-        "refugio": 1
+        "apto_para_ensayos": true
     }
 },
 {
-    "model": "examen.centro",
+    "model": "examen.farmaco",
     "pk": 2,
     "fields": {
-        "nombre": "Platanos de canarias",
-        "refugio": 2
+        "nombre": "Platanito",
+        "apto_para_ensayos": true
     }
 },
 {
-    "model": "examen.vacuna",
+    "model": "examen.ensayoclinico",
     "pk": 1,
     "fields": {
-        "nombre": "Rabia",
-        "fabricante": "Zoetis"
+        "nombre": "Platero y yo",
+        "descripcion": "aaaaaaaaaaa",
+        "farmaco": 2,
+        "nivel_seguimiento": 2,
+        "fecha_inicio": "2025-12-12",
+        "fecha_fin": "2025-12-27",
+        "activo": true,
+        "creado_por": 1,
+        "pacientes": [
+            1
+        ]
     }
 },
 {
-    "model": "examen.vacuna",
+    "model": "examen.ensayoclinico",
     "pk": 2,
     "fields": {
-        "nombre": "Epatitis",
-        "fabricante": "AstraZeneca"
+        "nombre": "Platanito2",
+        "descripcion": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "farmaco": 1,
+        "nivel_seguimiento": 4,
+        "fecha_inicio": "2025-12-12",
+        "fecha_fin": "2025-12-27",
+        "activo": true,
+        "creado_por": 1,
+        "pacientes": [
+            2
+        ]
     }
 },
 {
-    "model": "examen.vacuna",
-    "pk": 3,
-    "fields": {
-        "nombre": "Sifilis",
-        "fabricante": "Zoetis"
-    }
-},
-{
-    "model": "examen.animal",
+    "model": "examen.paciente",
     "pk": 1,
     "fields": {
-        "nombre": "Max",
-        "centro": 1,
-        "edad_estimada": 14
+        "nombre": "Juan",
+        "fecha_nacimiento": "2025-10-15",
+        "historial_medico": "aaaaaaaaaaaaaaa",
+        "edad": 1,
+        "usuario": 2
     }
 },
 {
-    "model": "examen.animal",
+    "model": "examen.paciente",
     "pk": 2,
     "fields": {
-        "nombre": "Mawamba",
-        "centro": 2,
-        "edad_estimada": 15
+        "nombre": "PacoGerte13.",
+        "fecha_nacimiento": "2007-12-12",
+        "historial_medico": "",
+        "edad": 18,
+        "usuario": 4
     }
 },
 {
-    "model": "examen.animal",
-    "pk": 3,
-    "fields": {
-        "nombre": "Pikachu",
-        "centro": 1,
-        "edad_estimada": 8
-    }
-},
-{
-    "model": "examen.animal",
-    "pk": 4,
-    "fields": {
-        "nombre": "Desdentao",
-        "centro": 2,
-        "edad_estimada": 89
-    }
-},
-{
-    "model": "examen.animal",
-    "pk": 5,
-    "fields": {
-        "nombre": "Platero",
-        "centro": 1,
-        "edad_estimada": 30
-    }
-},
-{
-    "model": "examen.animalvacunas",
+    "model": "examen.investigador",
     "pk": 1,
     "fields": {
-        "animal": 1,
-        "vacuna": 2
-    }
-},
-{
-    "model": "examen.animalvacunas",
-    "pk": 2,
-    "fields": {
-        "animal": 2,
-        "vacuna": 1
-    }
-},
-{
-    "model": "examen.animalvacunas",
-    "pk": 3,
-    "fields": {
-        "animal": 1,
-        "vacuna": 3
-    }
-},
-{
-    "model": "examen.animalvacunas",
-    "pk": 4,
-    "fields": {
-        "animal": 2,
-        "vacuna": 3
-    }
-},
-{
-    "model": "examen.revisionveterinaria",
-    "pk": 1,
-    "fields": {
-        "animal": 1,
-        "puntuacion_salud": 49,
-        "veterinario": "Manuel",
-        "fecha": "2025-11-17"
-    }
-},
-{
-    "model": "examen.revisionveterinaria",
-    "pk": 2,
-    "fields": {
-        "animal": 2,
-        "puntuacion_salud": 89,
-        "veterinario": "Paco",
-        "fecha": "2024-06-04"
-    }
-},
-{
-    "model": "examen.revisionveterinaria",
-    "pk": 3,
-    "fields": {
-        "animal": 5,
-        "puntuacion_salud": 30,
-        "veterinario": "Paco",
-        "fecha": "2024-06-04"
+        "nombre": "Paco2.",
+        "especialidad": "",
+        "afiliacion_institucional": "",
+        "usuario": 2
     }
 }
 ]

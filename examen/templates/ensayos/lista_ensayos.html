@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Lista Ensayos{% endblock %}
+{% block content %}
+  <h1>Ensayos</h1>
+  <a href="{% url 'crear_ensayo' %}">Crear ensayo</a>
+  <hr>
+  <h3>Búsqueda avanzada</h3>
+  <form method="get">
+    {{ form.as_p }}
+    <button type="submit">Buscar</button>
+  </form>
+  <hr>
+  <ul>
+    {% for e in ensayos %}
+      <li>
+        <a href="{% url 'detalle_ensayo' e.pk %}">{{ e.nombre }}</a> - {{ e.farmaco }} - {{ e.fecha_inicio }} / {{ e.fecha_fin }} {% if e.activo %}(activo){% endif %}
+      </li>
+    {% empty %}
+      <li>No hay ensayos</li>
+    {% endfor %}
+  </ul>
+{% endblock %}
